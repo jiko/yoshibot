@@ -1,8 +1,12 @@
-RUSTLE CROWE
+YOSHI BOT
 ======
 
 This is a twitter bot based on [chatterbot](https://github.com/muffinista/chatterbot):
 
 	gem install chatterbot
 
-It's mission: unrustling all the jimmies.
+or
+
+  bundle install
+
+Reminds followers about his coolness Yoshi 
