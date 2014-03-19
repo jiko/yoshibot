@@ -7,6 +7,6 @@ This is a twitter bot based on [chatterbot](https://github.com/muffinista/chatte
 
 or
 
-  bundle install
+  	bundle install
 
 Reminds followers about his coolness Yoshi 
