@@ -22,7 +22,7 @@ verbose
 #end
 
 replies do |tweet|
-  reply "#USER# " + "YOSHI", tweet
+  reply "#USER# " + Random.rand(12).times.map{"YOSHI"}.join(" "), tweet
 end
 
-tweet "YOSHI"
+tweet Random.rand(23).times.map{"YOSHI"}.join(" ")
