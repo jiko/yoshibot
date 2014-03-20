@@ -9,7 +9,7 @@ require 'chatterbot/dsl'
 # remove this to update the db
 no_update
 # remove this to get less output when running
-verbose
+#verbose
 
 # here's a list of users to ignore
 #blacklist "abc", "def"
