@@ -17,12 +17,16 @@ no_update
 # here's a list of things to exclude from searches
 # exclude "haha", "thank", "thanks", "stop", "lol"
 
-#search "'my jimmies'", opts={:count => 1} do |tweet|
-#  reply "#USER# " + pick_random_line(path+"responses.txt"), tweet
+def yoshi(max)
+  Random.rand(max).times.map{"YOSHI"}.join(" ")
+end
+
+#search "yoshi", opts={:count => 1} do |tweet|
+#  reply "#USER# " + yoshi(12), tweet
 #end
 
 replies do |tweet|
-  reply "#USER# " + Random.rand(12).times.map{"YOSHI"}.join(" "), tweet
+  reply "#USER# " + yoshi(12), tweet
 end
 
-tweet Random.rand(23).times.map{"YOSHI"}.join(" ")
+tweet yoshi(23)
