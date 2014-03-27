@@ -3,15 +3,6 @@
 require 'rubygems'
 require 'chatterbot/dsl'
 
-# remove this to send out tweets
-# debug_mode
-
-# remove this to update the db
-no_update
-
-# remove this to get less output when running
-#verbose
-
 # here's a list of users to ignore
 #blacklist "abc", "def"
 
@@ -30,4 +21,4 @@ replies do |tweet|
   reply "#USER# " + yoshi(12), tweet
 end
 
-tweet yoshi(23)
+client.update_with_media yoshi(12), File.open(ARGV.first)

@@ -3,5 +3,8 @@
 export GEM_HOME=$HOME/.gems
 
 FULLPATH=$0
-CMD=${FULLPATH/tweet.sh/yoshi.rb}
-$CMD
+BASEPATH=${FULLPATH/tweet.sh}
+cd $BASEPATH
+IMG=$(ls 1* 9* B* | head -n 1)
+./yoshi.rb $IMG
+rm $IMG
