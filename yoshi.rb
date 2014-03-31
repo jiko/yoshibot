@@ -17,8 +17,8 @@ end
 #  reply "#USER# " + yoshi(12), tweet
 #end
 
-replies do |tweet|
-  reply "#USER# " + yoshi(12), tweet
+replies do |tid|
+  reply "#USER# " + yoshi(12), tid
 end
 
-client.update_with_media yoshi(12), File.open(ARGV.first)
+tweet yoshi(14)
